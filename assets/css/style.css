@@ -431,6 +431,56 @@ body {
 
 /* Services
 --------------------------------------------------------------*/
+.service__content {
+  text-align: center;
+}
+.service__description {
+  margin-bottom: 2rem;
+}
+.service__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service__card {
+  padding: 2rem 3rem;
+  width: 100%;
+  max-width: 60rem;
+  background: var(--color-white);
+  box-shadow: var(--shadow-primary);
+  border-radius: var(--b-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  transition: var(--transition);
+}
+.service__card:hover {
+  box-shadow: var(--shadow-secondary);
+}
+.service__icon {
+  background: var(--color-gray-lighten);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+  font-size: 2.5rem;
+  color: var(--color-title);
+  transition: var(--transition);
+}
+.service__card:hover .service__icon {
+  transform: rotateY(360deg);
+}
+.service__info-title {
+  margin-bottom: 1rem;
+}
+.service__info-description {
+  font-size: var(--fs-sm);
+}
 
 /* Portfolio
 --------------------------------------------------------------*/
