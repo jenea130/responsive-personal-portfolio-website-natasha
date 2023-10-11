@@ -405,6 +405,29 @@ body {
 }
 /* Counter
 --------------------------------------------------------------*/
+.counter__wrapper {
+  background: var(--color-primary) var(--color-gradient);
+  padding: 5rem;
+  border-radius: var(--b-radius);
+  row-gap: 5rem;
+}
+.counter__item {
+  text-align: center;
+  color: var(--color-white);
+}
+.counter__icon {
+  font-size: 4rem;
+}
+.counter__number {
+  font-size: 3rem;
+  font-weight: var(--fw-semibold);
+}
+.counter__title {
+  margin-top: 1rem;
+  color: var(--color-white);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
+}
 
 /* Services
 --------------------------------------------------------------*/
