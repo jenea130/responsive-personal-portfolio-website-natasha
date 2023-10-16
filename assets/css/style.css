@@ -484,9 +484,72 @@ body {
 
 /* Portfolio
 --------------------------------------------------------------*/
+.portfolio__project {
+  position: relative;
+  width: 100%;
+  max-width: 35rem;
+  justify-self: center;
+  overflow: hidden;
+  border-radius: var(--b-radius);
+}
+.portfolio__info {
+  position: absolute;
+  bottom: -100%;
+  padding: 3rem;
+  transition: var(--transition);
+}
+.portfolio__title {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semibold);
+  color: var(--color-white);
+  margin-bottom: 1rem;
+}
+.portfolio__description {
+  margin-bottom: 2rem;
+  color: var(--color-white);
+}
+.portfolio__link {
+  position: absolute;
+  top: 2rem;
+  right: -100%;
+  width: 5rem;
+  height: 5rem;
+  background: var(--color-white);
+  color: var(--color-title);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  transition: var(--transition);
+}
+.portfolio__link:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+.portfolio__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: var(--color-secondary);
+  transition: var(--transition);
+}
+.portfolio__project:hover .portfolio__overlay {
+  opacity: 0.8;
+}
+.portfolio__project:hover .portfolio__info {
+  bottom: 0;
+}
+.portfolio__project:hover .portfolio__link {
+  right: 2rem;
+}
 
 /* Testimonials
 --------------------------------------------------------------*/
+
 
 /* Blog
 --------------------------------------------------------------*/
